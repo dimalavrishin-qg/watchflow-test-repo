@@ -1,0 +1,14 @@
+rules:
+  - description: Simple rule to test local setup
+    enabled: true
+    severity: medium
+    event_types: [pull_request]
+    parameters:
+      test_param: "local_test"
+
+  - description: All pull requests must have at least 1 approval
+    enabled: true
+    severity: high
+    event_types: [pull_request]
+    parameters:
+      min_approvals: 1
