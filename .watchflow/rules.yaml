@@ -12,3 +12,17 @@ rules:
     event_types: [pull_request]
     parameters:
       min_approvals: 1
+
+  - description: Max line test
+    enabled: true
+    severity: high
+    event_types: [pull_request]
+    parameters:
+      max_lines: 10
+  
+  - description: Test coverage
+    enabled: true
+    severity: high
+    event_types: [pull_request]
+    parameters:
+      require_tests: true
